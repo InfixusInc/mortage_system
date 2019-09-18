@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<AnchorPane fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pmh_system.controller.Personal">
+    <ImageView fitHeight="750.0" fitWidth="1400.0" layoutX="100.0" layoutY="25.0" pickOnBounds="true">
+        <Image url="@images/bg.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0edf0" height="750.0" layoutX="100.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.7;" width="1400.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="650.0" layoutX="250.0" layoutY="75.0" stroke="#3dd03d" strokeType="INSIDE" strokeWidth="3.0" style="-fx-opacity: 0.6;" width="1000.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="350.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="800.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="553.0" layoutY="138.0" stroke="WHITE" strokeType="INSIDE" style="-fx-opacity: 0.9;" width="283.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="820.0" layoutY="423.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="250.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="17.0" layoutX="832.0" layoutY="405.0" stroke="WHITE" strokeType="INSIDE" width="44.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="77.0" layoutX="410.0" layoutY="422.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="250.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="17.0" layoutX="415.0" layoutY="404.0" stroke="WHITE" strokeType="INSIDE" width="98.0" />
+
+    <JFXTextField fx:id="lastName" layoutX="410.0" layoutY="200.0" prefWidth="250.0" promptText="Surname " />
+    <JFXTextField fx:id="firstName" layoutX="820.0" layoutY="200.0" prefWidth="250.0" promptText="First Name (s)" />
+    <JFXDatePicker fx:id="birthDate" layoutX="410.0" layoutY="275.0" prefWidth="250.0" promptText="Date of Birth" />
+    <JFXTextField fx:id="natId" layoutX="818.0" layoutY="275.0" prefWidth="250.0" promptText="National ID No" />
+    <JFXTextField fx:id="birthCountry" layoutX="410.0" layoutY="350.0" prefWidth="250.0" promptText="Country of Birth" />
+    <JFXTextField fx:id="nationality" layoutX="818.0" layoutY="350.0" prefWidth="250.0" promptText="Nationality" />
+    <Label layoutX="510.0" layoutY="79.0" prefHeight="50.0" prefWidth="545.0" text="Mortgage Housing System">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <Label layoutX="419.0" layoutY="400.0" prefHeight="25.0" prefWidth="89.0" text="Marital Status" />
+    <JFXCheckBox fx:id="single" layoutX="429.0" layoutY="434.0" mnemonicParsing="false" onAction="#action3" text="Single" />
+    <JFXCheckBox fx:id="married" layoutX="555.0" layoutY="434.0" mnemonicParsing="false" onAction="#action4" text="Married" />
+    <JFXCheckBox fx:id="divorced" layoutX="429.0" layoutY="467.0" mnemonicParsing="false" onAction="#action5" text="Divorced" />
+    <JFXCheckBox fx:id="widowed" layoutX="555.0" layoutY="467.0" mnemonicParsing="false" onAction="#action6" text="Widowed" />
+    <Label layoutX="834.0" layoutY="406.0" prefHeight="17.0" prefWidth="59.0" text="Gender " />
+    <JFXCheckBox fx:id="male" layoutX="843.0" layoutY="450.0" mnemonicParsing="false" onAction="#action1" text="Male" />
+    <JFXCheckBox fx:id="female" layoutX="969.0" layoutY="450.0" mnemonicParsing="false" onAction="#action2" text="Female" />
+    <JFXTextField fx:id="cell" layoutX="406.0" layoutY="525.0" prefWidth="250.0" promptText="Cell Number (s)" />
+    <JFXTextField fx:id="email" layoutX="818.0" layoutY="525.0" prefWidth="250.0" promptText="Email Address" />
+    <JFXTextArea fx:id="address" layoutX="406.0" layoutY="585.0" prefHeight="50.0" prefWidth="250.0" promptText="Physical Address" />
+    <Label layoutX="570.0" layoutY="138.0" prefHeight="25.0" prefWidth="236.0" text="PERSONAL AND CONTACT DETAILS">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <JFXButton buttonType="RAISED" layoutX="709.0" layoutY="675.0" mnemonicParsing="false" onAction="#next" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="Proceed &gt;" textFill="#f8f6bb">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </JFXButton>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="507.0" layoutX="1364.0" layoutY="133.0" stroke="WHITE" strokeType="INSIDE" width="22.0" />
+
+    <JFXButton layoutX="1290.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #EF5350; -fx-background-radius: 100;" text="Step 1" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="1290.0" layoutY="625.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #644598; -fx-background-radius: 100;" text="Step 4" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="1290.0" layoutY="450.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #644598; -fx-background-radius: 100;" text="Step 3" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="1290.0" layoutY="275.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #644598; -fx-background-radius: 100;" text="Step 2" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </JFXButton>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="670.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="670.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="1079.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="670.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="1079.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="670.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="1079.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="670.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="1079.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/ob.png" />
+    </ImageView>
+   <JFXButton layoutX="570.0" layoutY="675.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="&lt;&lt;Return" textFill="#f8f6bb">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+</AnchorPane>

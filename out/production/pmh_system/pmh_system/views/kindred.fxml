@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pmh_system.controller.Kindred">
+    <ImageView fitHeight="750.0" fitWidth="1400.0" layoutX="100.0" layoutY="25.0" pickOnBounds="true">
+        <Image url="@images/bg.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0edf0" height="750.0" layoutX="100.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.7;" width="1400.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="700.0" layoutX="200.0" layoutY="50.0" stroke="#3dd03d" strokeType="INSIDE" strokeWidth="3.0" style="-fx-opacity: 0.6;" width="1000.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="195.0" layoutX="300.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="800.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="349.0" layoutY="115.0" stroke="WHITE" strokeType="INSIDE" width="176.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="301.0" layoutX="301.0" layoutY="386.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="800.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="348.0" layoutY="359.0" stroke="WHITE" strokeType="INSIDE" width="169.0" />
+    <Label layoutX="475.0" layoutY="54.0" prefHeight="40.0" prefWidth="567.0" text="Mortgage Housing System">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <Label layoutX="350.0" layoutY="118.0" prefHeight="25.0" prefWidth="160.0" text="NEXT OF KIN DETAILS">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <JFXTextField fx:id="kinName" layoutX="350.0" layoutY="175.0" prefWidth="268.0" promptText="Name" />
+    <JFXTextField fx:id="kinSurname" layoutX="775.0" layoutY="175.0" prefWidth="268.0" promptText="Surname" />
+    <JFXTextField fx:id="kinNatId" layoutX="350.0" layoutY="225.0" prefHeight="25.0" prefWidth="268.0" promptText="National ID No" />
+    <JFXTextField fx:id="kinDob" layoutX="775.0" layoutY="225.0" prefWidth="268.0" promptText="Date of Birth" />
+    <JFXTextField fx:id="kinPhone" layoutX="350.0" layoutY="275.0" prefWidth="268.0" promptText="Phone Number" />
+    <JFXTextArea fx:id="kinAddress" layoutX="775.0" layoutY="275.0" prefHeight="40.0" prefWidth="268.0" promptText="Physical Address" />
+    <Label layoutX="350.0" layoutY="360.0" prefHeight="28.0" prefWidth="151.0" text="List of Beneficiaries">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <JFXButton layoutX="646.0" layoutY="700.0" mnemonicParsing="false" onAction="#last" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="&lt; Previous" textFill="#f8f6bb">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="775.0" layoutY="700.0" mnemonicParsing="false" onAction="#next" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="Proceed &gt;" textFill="#f8f6bb">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </JFXButton>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="469.0" layoutX="1349.0" layoutY="161.0" stroke="WHITE" strokeType="INSIDE" width="22.0" />
+
+    <JFXButton layoutX="1275.0" layoutY="120.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #48ff60; -fx-background-radius: 100;" text="Step 1" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/fish2.png" />
+            </ImageView>
+        </graphic>
+    </JFXButton>
+    <JFXButton layoutX="1275.0" layoutY="619.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #644598; -fx-background-radius: 100;" text="Step 4" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="1275.0" layoutY="450.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #EF5350; -fx-background-radius: 100;" text="Step 3" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="1275.0" layoutY="285.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #48ff60; -fx-background-radius: 100;" text="Step 2" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/fish2.png" />
+            </ImageView>
+        </graphic>
+    </JFXButton>
+    <HBox layoutX="330.0" layoutY="413.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name" promptText="Name" />
+        <JFXTextField fx:id="surname" promptText="Surname" />
+        <JFXTextField fx:id="sex" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="331.0" layoutY="438.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name1" promptText="Name" />
+        <JFXTextField fx:id="surname1" promptText="Surname" />
+        <JFXTextField fx:id="sex1" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob1" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id1" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel1" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="332.0" layoutY="463.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name2" promptText="Name" />
+        <JFXTextField fx:id="surname2" promptText="Surname" />
+        <JFXTextField fx:id="sex2" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob2" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id2" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel2" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="333.0" layoutY="489.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name3" promptText="Name" />
+        <JFXTextField fx:id="surname3" promptText="Surname" />
+        <JFXTextField fx:id="sex3" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob3" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id3" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel3" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="333.0" layoutY="514.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name4" promptText="Name" />
+        <JFXTextField fx:id="surname4" promptText="Surname" />
+        <JFXTextField fx:id="sex4" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob4" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id4" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel4" promptText="Daughter" />
+    </HBox>
+   <JFXButton layoutX="509.0" layoutY="700.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="&lt; Return" textFill="#f8f6bb">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+    <HBox layoutX="333.0" layoutY="539.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name5" promptText="Name" />
+        <JFXTextField fx:id="surname5" promptText="Surname" />
+        <JFXTextField fx:id="sex5" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob5" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id5" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel5" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="334.0" layoutY="564.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name6" promptText="Name" />
+        <JFXTextField fx:id="surname6" promptText="Surname" />
+        <JFXTextField fx:id="sex6" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob6" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id6" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel6" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="334.0" layoutY="589.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name7" promptText="Name" />
+        <JFXTextField fx:id="surname7" promptText="Surname" />
+        <JFXTextField fx:id="sex7" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob7" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id7" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel7" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="334.0" layoutY="614.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name8" promptText="Name" />
+        <JFXTextField fx:id="surname8" promptText="Surname" />
+        <JFXTextField fx:id="sex8" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob8" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id8" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel8" promptText="Daughter" />
+    </HBox>
+    <HBox layoutX="334.0" layoutY="639.0" prefHeight="28.0" prefWidth="731.0">
+        <padding>
+            <Insets left="8.0" right="8.0" />
+        </padding>
+        <JFXTextField fx:id="name9" promptText="Name" />
+        <JFXTextField fx:id="surname9" promptText="Surname" />
+        <JFXTextField fx:id="sex9" prefWidth="150.0" promptText="Gender" />
+        <JFXTextField fx:id="dob9" promptText="DD/MM/YYYY" />
+        <JFXTextField fx:id="id9" promptText="63-0000000 X 00" />
+        <JFXTextField fx:id="rel9" promptText="Daughter" />
+    </HBox>
+</AnchorPane>

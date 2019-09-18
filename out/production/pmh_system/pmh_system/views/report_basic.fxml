@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="678.0" prefWidth="1400.0" style="-fx-background-color: #f8f6bb;" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets left="16.0" right="16.0" />
+   </padding>
+   <GridPane alignment="TOP_CENTER" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="678.0" prefWidth="1400.0" vgap="10">
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+      <TableView fx:id="tableView" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="678.0" prefWidth="1400.0">
+         <columns>
+         </columns>
+      </TableView>
+   </GridPane>
+</AnchorPane>

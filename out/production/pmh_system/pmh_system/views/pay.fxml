@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pmh_system.controller.RegPayment">
+    <ImageView fitHeight="750.0" fitWidth="1400.0" layoutX="100.0" layoutY="25.0" pickOnBounds="true">
+        <Image url="@images/bg.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0edf0" height="750.0" layoutX="100.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.7;" width="1400.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0edf0" height="650.0" layoutX="300.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.7;" width="1000.0" />
+    <Label layoutX="625.0" layoutY="106.0" prefHeight="50.0" prefWidth="544.0" text="Mortgage Housing System">
+        <font>
+          <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="450.0" layoutX="500.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="600.0" />
+    <JFXTextField fx:id="accountHolder" layoutX="600.0" layoutY="225.0" promptText="Account Holder" />
+    <JFXTextField fx:id="account" layoutX="875.0" layoutY="225.0" promptText="Account No." />
+    <JFXComboBox fx:id="method" layoutX="600.0" layoutY="325.0" promptText="Payment method" />
+    <JFXComboBox fx:id="currency" layoutX="875.0" layoutY="325.0" promptText="Choose currency" />
+    <JFXTextField fx:id="apId" layoutX="600.0" layoutY="425.0" promptText="Account No. Last Digit" />
+    <JFXTextField fx:id="amount" layoutX="875.0" layoutY="425.0" promptText="Amount paid" />
+    <JFXTextField fx:id="rate" layoutX="600.0" layoutY="525.0" promptText="Adjust exchange rate" />
+    <Label fx:id="equivalent" layoutX="875.0" layoutY="525.0" text="Equivalent: US$" />
+    <JFXButton buttonType="RAISED" layoutX="746.0" layoutY="651.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="Save&gt;" textFill="#f8f6bb">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </JFXButton>
+   <JFXButton buttonType="RAISED" layoutX="939.0" layoutY="650.0" mnemonicParsing="false" onAction="#addApplicant" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="Applicants&gt;&gt;" textFill="#f8f6bb">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+   <JFXButton buttonType="RAISED" layoutX="538.0" layoutY="650.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="&lt;&lt;Dashboard" textFill="#f8f6bb">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+</AnchorPane>

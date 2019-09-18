@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anc" maxHeight="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pmh_system.controller.Login">
+   <ImageView fitHeight="750.0" fitWidth="1400.0" layoutX="100.0" layoutY="25.0" pickOnBounds="true">
+      <Image url="@images/bg.jpg" />
+   </ImageView>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0edf0" height="750.0" layoutX="100.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.7;" width="1400.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="650.0" layoutX="300.0" layoutY="75.0" stroke="#3dd03d" strokeType="INSIDE" strokeWidth="3.0" style="-fx-opacity: 0.6;" width="1000.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8a2829" height="450.0" layoutX="450.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="700.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f6bb" height="120.0" layoutX="450.0" layoutY="150.0" stroke="WHITE" strokeType="INSIDE" style="-fx-opacity: 1;" width="700.0" />
+   <Label layoutX="625.0" layoutY="179.0" prefHeight="64.0" prefWidth="300.0" text="Mortgage Housing System" textFill="#8a2829">
+      <font>
+         <Font name="System Bold Italic" size="24.0" />
+      </font>
+   </Label>
+   <Label alignment="TOP_CENTER" layoutX="748.0" layoutY="280.0" text="Login">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <JFXButton buttonType="RAISED" layoutX="1016.0" layoutY="193.0" mnemonicParsing="false" onAction="#signUp" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: #8a2829;" text="Sign Up" textFill="#f8f6bb">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </JFXButton>
+   <JFXTextField fx:id="loginUsername" layoutX="620.0" layoutY="347.0" prefHeight="20.0" prefWidth="325.0" promptText="Username">
+      <padding>
+         <Insets bottom="12.0" left="8.0" right="8.0" top="12.0" />
+      </padding>
+   </JFXTextField>
+   <JFXPasswordField fx:id="loginPassword" layoutX="620.0" layoutY="448.0" prefHeight="20.0" prefWidth="325.0" promptText="Password">
+      <padding>
+         <Insets bottom="12.0" left="8.0" right="8.0" top="12.0" />
+      </padding>
+   </JFXPasswordField>
+   <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="699.0" layoutY="545.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="167.0" style="-fx-background-color: #f8f6bb;" text="Login" textFill="#8a2829">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </JFXButton>
+   <!--<fx:define>-->
+      <!--<RequiredFieldValidator fx:id="requiredUser">-->
+         <!--<srcControl>-->
+            <!--<fx:reference source="loginUsername"/>-->
+         <!--</srcControl>-->
+      <!--</RequiredFieldValidator>-->
+   <!--</fx:define>-->
+   <!--<fx:define>-->
+      <!--<RequiredFieldValidator fx:id="requiredPass">-->
+         <!--<srcControl>-->
+            <!--<fx:reference source="loginPassword"/>-->
+         <!--</srcControl>-->
+      <!--</RequiredFieldValidator>-->
+   <!--</fx:define>-->
+   <!--<ErrorPane message="Please enter your username">-->
+<!--      <validator>-->
+<!--         <fx:reference source="requiredUser"/>-->
+<!--      </validator>-->
+   <!--</ErrorPane>-->
+<!--   <ErrorLabel message="Please enter your password">-->
+<!--      <validator>-->
+<!--         <fx:reference source="requiredPass"/>-->
+<!--      </validator>-->
+<!--   </ErrorLabel>-->
+</AnchorPane>

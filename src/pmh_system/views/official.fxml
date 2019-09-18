@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pmh_system.controller.Official">
+    <ImageView fitHeight="750.0" fitWidth="1400.0" layoutX="100.0" layoutY="25.0" pickOnBounds="true">
+        <Image url="@images/bg.jpg" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0edf0" height="750.0" layoutX="100.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.7;" width="1400.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="650.0" layoutX="250.0" layoutY="75.0" stroke="#3dd03d" strokeType="INSIDE" strokeWidth="3.0" style="-fx-opacity: 0.6;" width="1000.0" />
+
+    <Label layoutX="575.0" layoutY="85.0" prefHeight="38.0" prefWidth="544.0" text="Mortgage Housing System">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="450.0" layoutX="450.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.4;" width="600.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="668.0" layoutY="147.0" stroke="WHITE" strokeType="INSIDE" width="196.0" />
+    <Label layoutX="681.0" layoutY="142.0" prefHeight="38.0" prefWidth="154.0" text="  Official Use">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <JFXTextField fx:id="propertyValueText" layoutX="650.0" layoutY="225.0" prefHeight="30.0" prefWidth="250.0" promptText="Property Value" />
+    <JFXTextField fx:id="loanValueText" layoutX="650.0" layoutY="325.0" prefHeight="30.0" prefWidth="250.0" promptText="Loan Value" />
+    <JFXTextField fx:id="monthlySubText" layoutX="650.0" layoutY="424.0" prefHeight="30.0" prefWidth="250.0" promptText="Monthly Subscription" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="480.0" layoutX="1364.0" layoutY="137.0" stroke="WHITE" strokeType="INSIDE" width="22.0" />
+    <JFXButton layoutX="696.0" layoutY="650.0" mnemonicParsing="false" onAction="#last" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="&lt;Previous" textFill="#f8f6bb">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </JFXButton>
+    <JFXButton layoutX="940.0" layoutY="650.0" mnemonicParsing="false" onAction="#next" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="Proceed &gt;" textFill="#f8f6bb">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </JFXButton>
+
+    <JFXButton layoutX="1290.0" layoutY="275.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #48ff60; -fx-background-radius: 100;" text="Step 2" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/fish2.png" />
+            </ImageView>
+        </graphic>
+    </JFXButton>
+    <JFXButton layoutX="1297.0" layoutY="600.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #EF5350; -fx-background-radius: 100;" text="Step 4" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/fish2.png" />
+            </ImageView>
+        </graphic>
+    </JFXButton>
+    <JFXButton layoutX="1290.0" layoutY="425.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #48ff60; -fx-background-radius: 100;" text="Step 3" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@images/fish2.png" />
+            </ImageView>
+        </graphic>
+    </JFXButton>
+   <JFXButton layoutX="1290.0" layoutY="105.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #48ff60; -fx-background-radius: 100;" text="Step 1" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font>
+      <graphic>
+          <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <Image url="@images/fish2.png" />
+          </ImageView>
+      </graphic>
+   </JFXButton>
+   <JFXButton buttonType="RAISED" layoutX="451.0" layoutY="650.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #8a2829; -fx-background-radius: 100;" text="&lt;&lt;Return" textFill="#f8f6bb">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </JFXButton>
+</AnchorPane>
